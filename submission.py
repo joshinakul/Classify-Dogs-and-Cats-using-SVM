@@ -30,7 +30,7 @@ labeled_data = np.array(labeled_data)
 
 # Splitting the dataset in 7000 and 3000
 from sklearn.model_selection import train_test_split as tts
-x_train,x_test,y_train,y_test = tts(input_data,labeled_data,test_size = 0.3,random_state = 42)
+x_train,x_test,y_train,y_test = tts(input_data,labeled_data,test_size = 0.2,random_state = 42)
 
 # Training the SVM model
 from sklearn.svm import SVC
